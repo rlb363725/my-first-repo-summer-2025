@@ -1,8 +1,9 @@
 # this is the "requirements.txt" file
 
 # packages used in the app:
+Flask
+gunicorn
 
-# ...
 
 
 # packages used for testing:

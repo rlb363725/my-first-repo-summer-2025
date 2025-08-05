@@ -30,7 +30,21 @@ python app/rps.py
 python -m app.rps
 ```
 
+
+## Web App
+
+Run the web application:
+
+```sh
+# development server:
+flask run
+
+# production server:
+gunicorn app.server:app
+```
+
 ## Tests
+
 
 Run the tests:
 
