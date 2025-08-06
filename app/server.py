@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from app.rps import determine_winner, VALID_OPTIONS
 import random
 
@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Welcome to Rock, Paper, Scissors!"
+    return render_template("index.html")
 
 @app.route("/play", methods=["POST"])
 def play():
